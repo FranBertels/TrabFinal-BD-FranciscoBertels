@@ -6,7 +6,7 @@
     "originY": 0,
     "zoomLevel": 1,
     "show": 431,
-    "database": 4,
+    "database": 16,
     "databaseName": "",
     "canvasType": "ERD",
     "language": 1,
@@ -70,7 +70,7 @@
       },
       "03h4m1i7tqb31xtuzmizv68fp": {
         "id": "03h4m1i7tqb31xtuzmizv68fp",
-        "name": "Time",
+        "name": "equipe",
         "columnIds": [
           "03h4m1kfpo0xmd2ojckrvih40",
           "03h4m1pg0u7dggj00dl9e98pr",
@@ -84,7 +84,7 @@
       },
       "03h4m24m133khm9ljo7rsiree": {
         "id": "03h4m24m133khm9ljo7rsiree",
-        "name": "jogador_time",
+        "name": "jogador_equipe",
         "columnIds": [
           "03h64krwg4mcmchds59ywuq6r",
           "03h4m261higodf8ijsk3nfkd4",
@@ -170,8 +170,9 @@
       },
       "03h64mxmoouey7ecsdyjtvfrv": {
         "id": "03h64mxmoouey7ecsdyjtvfrv",
-        "name": "partida_time",
+        "name": "partida_equipe",
         "columnIds": [
+          "03h7glfmikupw66hwzhkwlcvd",
           "03h64n0gbtrob6834oigis8uf",
           "03h64n23kcx69hvd0j0nk6op2",
           "03h64n38z43wa0bsz2m1m6wjq",
@@ -254,7 +255,7 @@
         "id": "03h64ix8dior2l3infebs4kpc",
         "tableId": "03h4m1i7tqb31xtuzmizv68fp",
         "name": "idregiao",
-        "dataType": "BIGINT UNSIGNED",
+        "dataType": "INT",
         "options": 8
       },
       "03h4m261higodf8ijsk3nfkd4": {
@@ -275,15 +276,15 @@
         "id": "03h4m2c5boxc4ktftn7nj5ath",
         "tableId": "03h4m24m133khm9ljo7rsiree",
         "name": "idjogador",
-        "dataType": "BIGINT UNSIGNED",
-        "options": 10
+        "dataType": "INT",
+        "options": 8
       },
       "03h4m2d5o5xmb5gp9urxbygez": {
         "id": "03h4m2d5o5xmb5gp9urxbygez",
         "tableId": "03h4m24m133khm9ljo7rsiree",
-        "name": "idtime",
-        "dataType": "BIGINT UNSIGNED",
-        "options": 10
+        "name": "idequipe",
+        "dataType": "INT",
+        "options": 8
       },
       "03h4m4bl4i8583yyafy3zfb5y": {
         "id": "03h4m4bl4i8583yyafy3zfb5y",
@@ -345,7 +346,7 @@
         "id": "03h4m418qtee7q9ziancpqf18",
         "tableId": "03h4m3yb7brgvijf3gzo3dt0k",
         "name": "nome",
-        "dataType": "VARCHAR(10)",
+        "dataType": "VARCHAR(70)",
         "options": 8
       },
       "03h4m6pmjqm5yquq6ey06ko0p": {
@@ -373,15 +374,15 @@
         "id": "03h64pio6x84cpl5879avudrx",
         "tableId": "03h4m6oa1y01kidxxx3m7vf4o",
         "name": "idevento",
-        "dataType": "BIGINT UNSIGNED",
+        "dataType": "INT",
         "options": 8
       },
       "03h64pz7bg3foqcb80dnrmpt7": {
         "id": "03h64pz7bg3foqcb80dnrmpt7",
         "tableId": "03h4m6oa1y01kidxxx3m7vf4o",
-        "name": "idtime",
-        "dataType": "BIGINT UNSIGNED",
-        "options": 8
+        "name": "idequipe",
+        "dataType": "INT",
+        "options": 0
       },
       "03h64jmbsnrnvhwwodj7vowy7": {
         "id": "03h64jmbsnrnvhwwodj7vowy7",
@@ -408,7 +409,7 @@
         "id": "03h64q4r48uyd6otuhtp47fk9",
         "tableId": "03h64jkcy90otiuxdp98hd0ln",
         "name": "idevento",
-        "dataType": "BIGINT UNSIGNED",
+        "dataType": "INT",
         "options": 8
       },
       "03h64lp9d6du45wf9w1wvdmif": {
@@ -436,22 +437,22 @@
         "id": "03h64q7lfu2gkcdl4k5t6gha3",
         "tableId": "03h64lngkft60z1rlehguvucb",
         "name": "idfase",
-        "dataType": "BIGINT UNSIGNED",
+        "dataType": "INT",
         "options": 8
       },
       "03h64n0gbtrob6834oigis8uf": {
         "id": "03h64n0gbtrob6834oigis8uf",
         "tableId": "03h64mxmoouey7ecsdyjtvfrv",
         "name": "idpartida",
-        "dataType": "BIGINT UNSIGNED",
-        "options": 10
+        "dataType": "INT",
+        "options": 8
       },
       "03h64n23kcx69hvd0j0nk6op2": {
         "id": "03h64n23kcx69hvd0j0nk6op2",
         "tableId": "03h64mxmoouey7ecsdyjtvfrv",
-        "name": "idtime",
-        "dataType": "BIGINT UNSIGNED",
-        "options": 10
+        "name": "idequipe",
+        "dataType": "INT",
+        "options": 8
       },
       "03h64n38z43wa0bsz2m1m6wjq": {
         "id": "03h64n38z43wa0bsz2m1m6wjq",
@@ -493,6 +494,13 @@
         "default": "0",
         "options": 8
       },
+      "03h7glfmikupw66hwzhkwlcvd": {
+        "id": "03h7glfmikupw66hwzhkwlcvd",
+        "tableId": "03h64mxmoouey7ecsdyjtvfrv",
+        "name": "id",
+        "dataType": "serial",
+        "options": 10
+      },
       "03h64owqmywni05sev0b2n20w": {
         "id": "03h64owqmywni05sev0b2n20w",
         "tableId": "03h64ovdvg8a1nzc5tbgkxjj1",
@@ -510,7 +518,7 @@
       "03h64p3ad1te39yxi62ow2n4b": {
         "id": "03h64p3ad1te39yxi62ow2n4b",
         "tableId": "03h64ovdvg8a1nzc5tbgkxjj1",
-        "name": "visualizações",
+        "name": "visualisacoes",
         "dataType": "INT8",
         "default": "0",
         "options": 8
@@ -519,7 +527,7 @@
         "id": "03h64qmvzj43c2kjgtpqtfbrc",
         "tableId": "03h64ovdvg8a1nzc5tbgkxjj1",
         "name": "idpartida",
-        "dataType": "BIGINT UNSIGNED",
+        "dataType": "INT",
         "options": 8
       }
     },
