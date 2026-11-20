@@ -37,7 +37,8 @@
       "03h64jkcy90otiuxdp98hd0ln",
       "03h64lngkft60z1rlehguvucb",
       "03h64mxmoouey7ecsdyjtvfrv",
-      "03h64ovdvg8a1nzc5tbgkxjj1"
+      "03h64ovdvg8a1nzc5tbgkxjj1",
+      "03h9n5syukw875riqnzjhtuq0"
     ],
     "relationshipIds": [
       "03h4m2c5c58wshjrktznc7krd",
@@ -49,14 +50,16 @@
       "03h64pz7bg3foqcb80eifx80v",
       "03h64q4r48uyd6otuhu6lzcdz",
       "03h64q7lfu2gkcdl4k81b8c6o",
-      "03h64qmvzj43c2kjgtrdpff8h"
+      "03h64qmvzj43c2kjgtrdpff8h",
+      "03h9n642ou9zlnqal0dwjzlcs",
+      "03h9n657hkevqbj5s1c7uqgkn"
     ]
   },
   "collections": {
     "tableEntities": {
       "03h4m0uzohr26jsathg5eaqhf": {
         "id": "03h4m0uzohr26jsathg5eaqhf",
-        "name": "Jogador",
+        "name": "jogador",
         "columnIds": [
           "03h4m1kmfc8tfgvves6cj4hcv",
           "03h4m0w44gio3t873b3r1sg0j",
@@ -64,8 +67,8 @@
           "03h64jyu94aol3dnffsop7bdy"
         ],
         "ui": {
-          "x": -137,
-          "y": 118
+          "x": -71.8833,
+          "y": 220.3262
         }
       },
       "03h4m1i7tqb31xtuzmizv68fp": {
@@ -109,8 +112,8 @@
           "03h4m3gf4gbkr2qvuw5b6obbz"
         ],
         "ui": {
-          "x": -236.44,
-          "y": 369.0133
+          "x": 151.9327,
+          "y": 382.9667
         }
       },
       "03h4m3yb7brgvijf3gzo3dt0k": {
@@ -136,8 +139,8 @@
           "03h64pz7bg3foqcb80dnrmpt7"
         ],
         "ui": {
-          "x": 338.1833,
-          "y": 383.3061
+          "x": 591.6721,
+          "y": 357.7245
         }
       },
       "03h64jkcy90otiuxdp98hd0ln": {
@@ -150,8 +153,8 @@
           "03h64q4r48uyd6otuhtp47fk9"
         ],
         "ui": {
-          "x": 183.5282,
-          "y": 657.2473
+          "x": 155.621,
+          "y": 575.8518
         }
       },
       "03h64lngkft60z1rlehguvucb": {
@@ -164,8 +167,8 @@
           "03h64q7lfu2gkcdl4k5t6gha3"
         ],
         "ui": {
-          "x": 819.453,
-          "y": 592.5579
+          "x": 684.5689,
+          "y": 585.5815
         }
       },
       "03h64mxmoouey7ecsdyjtvfrv": {
@@ -198,6 +201,24 @@
         "ui": {
           "x": 1371.6415,
           "y": 594.4805
+        }
+      },
+      "03h9n5syukw875riqnzjhtuq0": {
+        "id": "03h9n5syukw875riqnzjhtuq0",
+        "name": "partida_jogador",
+        "columnIds": [
+          "03h9n5u3dfo0cw6pm0jy7hhlb",
+          "03h9n5w2tq198mzsyi3asbn5v",
+          "03h9n5x2rgjphgujee8h50w88",
+          "03h9n5xf6cmj4zlexjj6f0rlk",
+          "03h9n5xxhr47mxhpztxk7rrek",
+          "03h9n5yeam86kr2r9p7qqe3gp",
+          "03h9n642ojb5bkqk7oofhek44",
+          "03h9n657hkevqbj5s19w3z1sn"
+        ],
+        "ui": {
+          "x": 132.6059,
+          "y": 747.4831
         }
       }
     },
@@ -529,6 +550,67 @@
         "name": "idpartida",
         "dataType": "INT",
         "options": 8
+      },
+      "03h9n5u3dfo0cw6pm0jy7hhlb": {
+        "id": "03h9n5u3dfo0cw6pm0jy7hhlb",
+        "tableId": "03h9n5syukw875riqnzjhtuq0",
+        "name": "id",
+        "dataType": "serial",
+        "options": 10
+      },
+      "03h9n5w2tq198mzsyi3asbn5v": {
+        "id": "03h9n5w2tq198mzsyi3asbn5v",
+        "tableId": "03h9n5syukw875riqnzjhtuq0",
+        "name": "abates",
+        "dataType": "INT",
+        "default": "0",
+        "options": 8
+      },
+      "03h9n5x2rgjphgujee8h50w88": {
+        "id": "03h9n5x2rgjphgujee8h50w88",
+        "tableId": "03h9n5syukw875riqnzjhtuq0",
+        "name": "mortes",
+        "dataType": "INT",
+        "default": "0",
+        "options": 8
+      },
+      "03h9n5xf6cmj4zlexjj6f0rlk": {
+        "id": "03h9n5xf6cmj4zlexjj6f0rlk",
+        "tableId": "03h9n5syukw875riqnzjhtuq0",
+        "name": "assistencias",
+        "dataType": "INT",
+        "default": "0",
+        "options": 8
+      },
+      "03h9n5xxhr47mxhpztxk7rrek": {
+        "id": "03h9n5xxhr47mxhpztxk7rrek",
+        "tableId": "03h9n5syukw875riqnzjhtuq0",
+        "name": "ouro",
+        "dataType": "INT",
+        "default": "0",
+        "options": 8
+      },
+      "03h9n5yeam86kr2r9p7qqe3gp": {
+        "id": "03h9n5yeam86kr2r9p7qqe3gp",
+        "tableId": "03h9n5syukw875riqnzjhtuq0",
+        "name": "dano",
+        "dataType": "INT",
+        "default": "0",
+        "options": 8
+      },
+      "03h9n642ojb5bkqk7oofhek44": {
+        "id": "03h9n642ojb5bkqk7oofhek44",
+        "tableId": "03h9n5syukw875riqnzjhtuq0",
+        "name": "idjogador",
+        "dataType": "INT",
+        "options": 8
+      },
+      "03h9n657hkevqbj5s19w3z1sn": {
+        "id": "03h9n657hkevqbj5s19w3z1sn",
+        "tableId": "03h9n5syukw875riqnzjhtuq0",
+        "name": "idpartida",
+        "dataType": "INT",
+        "options": 8
       }
     },
     "relationshipEntities": {
@@ -709,6 +791,42 @@
           "tableId": "03h64ovdvg8a1nzc5tbgkxjj1",
           "columnIds": [
             "03h64qmvzj43c2kjgtpqtfbrc"
+          ]
+        }
+      },
+      "03h9n642ou9zlnqal0dwjzlcs": {
+        "id": "03h9n642ou9zlnqal0dwjzlcs",
+        "relationshipType": 16,
+        "onDelete": 1,
+        "onUpdate": 1,
+        "start": {
+          "tableId": "03h4m0uzohr26jsathg5eaqhf",
+          "columnIds": [
+            "03h4m1kmfc8tfgvves6cj4hcv"
+          ]
+        },
+        "end": {
+          "tableId": "03h9n5syukw875riqnzjhtuq0",
+          "columnIds": [
+            "03h9n642ojb5bkqk7oofhek44"
+          ]
+        }
+      },
+      "03h9n657hkevqbj5s1c7uqgkn": {
+        "id": "03h9n657hkevqbj5s1c7uqgkn",
+        "relationshipType": 16,
+        "onDelete": 1,
+        "onUpdate": 1,
+        "start": {
+          "tableId": "03h64lngkft60z1rlehguvucb",
+          "columnIds": [
+            "03h64lp9d6du45wf9w1wvdmif"
+          ]
+        },
+        "end": {
+          "tableId": "03h9n5syukw875riqnzjhtuq0",
+          "columnIds": [
+            "03h9n657hkevqbj5s19w3z1sn"
           ]
         }
       }

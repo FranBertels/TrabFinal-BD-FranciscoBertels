@@ -61,7 +61,7 @@ CREATE TABLE IF NOT EXISTS jogador_equipe
   CONSTRAINT pk_jogadorequipe PRIMARY KEY (id),
   CONSTRAINT fk_jogador
     FOREIGN KEY (idjogador)
-    REFERENCES J=jogador (id),
+    REFERENCES jogador (id),
   CONSTRAINT fk_equipe
     FOREIGN KEY (idequipe)
     REFERENCES equipe (id)
@@ -127,4 +127,18 @@ CREATE TABLE IF NOT EXISTS transmissao
   CONSTRAINT fk_partida
     FOREIGN KEY (idpartida)
     REFERENCES partida (id)
+);
+
+CREATE TABLE IF NOT EXISTS estatistica_jogador (
+    id SERIAL NOT NULL,
+    idjogador INT NOT NULL,
+    idpartida INT NOT NULL,
+    abates INT NOT NULL DEFAULT 0,
+    mortes INT NOT NULL DEFAULT 0,
+    assistencias INT NOT NULL DEFAULT 0,
+    ouro INT NOT NULL DEFAULT 0,
+    dano INT NOT NULL DEFAULT 0,
+ CONSTRAINT pk_estatisticajogador PRIMARY KEY (id),
+ CONSTRAINT fk_jogador FOREIGN KEY (idjogador) REFERENCES jogador(id),
+ CONSTRAINT fk_partida FOREIGN KEY (idpartida) REFERENCES partida(id)
 );
